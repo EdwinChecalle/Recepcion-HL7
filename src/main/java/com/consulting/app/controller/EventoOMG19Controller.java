@@ -39,8 +39,8 @@ public class EventoOMG19Controller {
 		log.info(evento.toString());
 		if ((boolean) resultado[0]) {
 			_eventoOMG19Dao.insertevent(evento);
-			_eventoOmg19Service.config().setHost(_config.getHost()).setPuero(_config.getPuerto()).build()
-					.enviarEventoOmg19(_eventoOmg19Service.objectToEr7(evento));
+			/*_eventoOmg19Service.config().setHost(_config.getHost()).setPuero(_config.getPuerto()).build()
+					.enviarEventoOmg19(_eventoOmg19Service.objectToEr7(evento));*/
 			return new ResponseEntity<EventoOMG19>(evento, HttpStatus.CREATED);
 		} else {
 			return new ResponseEntity((String) resultado[1], HttpStatus.CONFLICT);

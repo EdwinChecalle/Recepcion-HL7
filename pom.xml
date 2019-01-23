@@ -7,7 +7,7 @@
 	<groupId>com.consulting</groupId>
 	<artifactId>Recepcion-HL7</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>Recepcion-HL7</name>
 	<description>Demo project for Spring Boot</description>
@@ -72,11 +72,11 @@
 			<artifactId>h2</artifactId>
 		</dependency>
 
-		<!--<dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
-		</dependency>-->
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>

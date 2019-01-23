@@ -1,5 +1,6 @@
 package com.consulting.app.model;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -119,6 +120,46 @@ public class EventoORUR01 {
 
 	@Column(name = "ORU01_V_MEDICION_ACTUAL")
 	private String oru01_v_medicion_actual;
+
+	//AGREGADOS
+	@Column(name = "CONCENTRACION_OXIGENO")
+	private String concentracion_oxigeno;
+
+	@Column(name = "CVF_CAPACIDAD_VITAL_FORSADA")
+	private String cvf_capacidad_vital_forsada;
+
+	@Column(name = "FRECUENCIA_INSPIRACION")
+	private String frecuencia_inspiracion;
+
+	@Column(name = "FRECUENCIA_EXPIRACION")
+	private String frecuencia_expiracion;
+
+	@Column(name = "ORU01_V_INC")
+	private String oru01_v_inc;
+
+	@Column(name = "ORU01_V_TOS")
+	private String 	oru01_v_tos;
+
+	@Column(name = "ORU01_V_DOLOR")
+	private String oru01_v_dolor;
+
+	@Column(name = "ORU01_V_SIBILANCIA")
+	private String oru01_v_sibilancia;
+
+	@Column(name = "ORU01_V_RONCANTES")
+	private String oru01_v_roncantes;
+
+	@Column(name = "ORU01_V_FECA")
+	private String oru01_v_feca;
+
+	@Column(name = "ORU01_B_ESTADO_P")
+	private Integer 	oru01_b_estado_p ;
+
+	@Column(name = "ORU01_B_ESTADO_F")
+	private Integer oru01_b_estado_f;
+
+	@Column(name = "ORU01_PORCENTAJE_EPOC")
+	private BigDecimal oru01_porcentaje_epoc;
 
 	public int getOru01_id() {
 		return oru01_id;
@@ -392,26 +433,160 @@ public class EventoORUR01 {
 		this.oru01_v_medicion_actual = oru01_v_medicion_actual;
 	}
 
-	@Override
-	public String toString() {
-		return "EventoORUR01 [oru01_id=" + oru01_id + ", pid3_1_id_peticion=" + pid3_1_id_peticion
-				+ ", pid3_1_id_seguridad_social=" + pid3_1_id_seguridad_social + ", pid3_1_id_cip_nacional="
-				+ pid3_1_id_cip_nacional + ", pid3_1_id_dni=" + pid3_1_id_dni + ", pid5_1_v_primer_apellido="
-				+ pid5_1_v_primer_apellido + ", pid5_2_v_nombre=" + pid5_2_v_nombre + ", orc2_1_id_peticion="
-				+ orc2_1_id_peticion + ", obx_2_v_tipo_valor=" + obx_2_v_tipo_valor + ", obx_3_1_v_id_observacion="
-				+ obx_3_1_v_id_observacion + ", obx_4_v_sub_id_observacion=" + obx_4_v_sub_id_observacion
-				+ ", obx_5_v_valor_observacion=" + obx_5_v_valor_observacion + ", oru01_dt_fecregistro="
-				+ oru01_dt_fecregistro + ", oru01_id_medicion=" + oru01_id_medicion + ", oru01_v_medico="
-				+ oru01_v_medico + ", oru01_dt_fecha_espirometria=" + oru01_dt_fecha_espirometria + ", oru01_v_pef="
-				+ oru01_v_pef + ", oru01_v_fev1=" + oru01_v_fev1 + ", oru01_dt_fecha_fonendoscopia="
-				+ oru01_dt_fecha_fonendoscopia + ", oru01_v_sonido=" + oru01_v_sonido + ", oru01_dt_fecha_resultado="
-				+ oru01_dt_fecha_resultado + ", oru01_b_estado=" + oru01_b_estado + ", oru01_id_historico="
-				+ oru01_id_historico + ", oru01_v_ambientes_contaminados=" + oru01_v_ambientes_contaminados
-				+ ", oru01_v_actividades=" + oru01_v_actividades + ", oru01_v_cansancio=" + oru01_v_cansancio
-				+ ", oru01_v_ausentismo=" + oru01_v_ausentismo + ", oru01_v_asma=" + oru01_v_asma + ", oru01_v_fuma="
-				+ oru01_v_fuma + ", oru01_v_alergico=" + oru01_v_alergico + ", oru01_v_operaciones="
-				+ oru01_v_operaciones + ", oru01_v_tumores=" + oru01_v_tumores + ", oru01_v_antecedentes="
-				+ oru01_v_antecedentes + ", oru01_v_medicion_actual=" + oru01_v_medicion_actual + "]";
+	public String getConcentracion_oxigeno() {
+		return concentracion_oxigeno;
 	}
 
+	public void setConcentracion_oxigeno(String concentracion_oxigeno) {
+		this.concentracion_oxigeno = concentracion_oxigeno;
+	}
+
+	public String getCvf_capacidad_vital_forsada() {
+		return cvf_capacidad_vital_forsada;
+	}
+
+	public void setCvf_capacidad_vital_forsada(String cvf_capacidad_vital_forsada) {
+		this.cvf_capacidad_vital_forsada = cvf_capacidad_vital_forsada;
+	}
+
+	public String getFrecuencia_inspiracion() {
+		return frecuencia_inspiracion;
+	}
+
+	public void setFrecuencia_inspiracion(String frecuencia_inspiracion) {
+		this.frecuencia_inspiracion = frecuencia_inspiracion;
+	}
+
+	public String getFrecuencia_expiracion() {
+		return frecuencia_expiracion;
+	}
+
+	public void setFrecuencia_expiracion(String frecuencia_expiracion) {
+		this.frecuencia_expiracion = frecuencia_expiracion;
+	}
+
+	public String getOru01_v_inc() {
+		return oru01_v_inc;
+	}
+
+	public void setOru01_v_inc(String oru01_v_inc) {
+		this.oru01_v_inc = oru01_v_inc;
+	}
+
+	public String getOru01_v_tos() {
+		return oru01_v_tos;
+	}
+
+	public void setOru01_v_tos(String oru01_v_tos) {
+		this.oru01_v_tos = oru01_v_tos;
+	}
+
+	public String getOru01_v_dolor() {
+		return oru01_v_dolor;
+	}
+
+	public void setOru01_v_dolor(String oru01_v_dolor) {
+		this.oru01_v_dolor = oru01_v_dolor;
+	}
+
+	public String getOru01_v_sibilancia() {
+		return oru01_v_sibilancia;
+	}
+
+	public void setOru01_v_sibilancia(String oru01_v_sibilancia) {
+		this.oru01_v_sibilancia = oru01_v_sibilancia;
+	}
+
+	public String getOru01_v_roncantes() {
+		return oru01_v_roncantes;
+	}
+
+	public void setOru01_v_roncantes(String oru01_v_roncantes) {
+		this.oru01_v_roncantes = oru01_v_roncantes;
+	}
+
+	public String getOru01_v_feca() {
+		return oru01_v_feca;
+	}
+
+	public void setOru01_v_feca(String oru01_v_feca) {
+		this.oru01_v_feca = oru01_v_feca;
+	}
+
+	public Integer getOru01_b_estado_p() {
+		return oru01_b_estado_p;
+	}
+
+	public void setOru01_b_estado_p(Integer oru01_b_estado_p) {
+		this.oru01_b_estado_p = oru01_b_estado_p;
+	}
+
+	public Integer getOru01_b_estado_f() {
+		return oru01_b_estado_f;
+	}
+
+	public void setOru01_b_estado_f(Integer oru01_b_estado_f) {
+		this.oru01_b_estado_f = oru01_b_estado_f;
+	}
+
+	public BigDecimal getOru01_porcentaje_epoc() {
+		return oru01_porcentaje_epoc;
+	}
+
+	public void setOru01_porcentaje_epoc(BigDecimal oru01_porcentaje_epoc) {
+		this.oru01_porcentaje_epoc = oru01_porcentaje_epoc;
+	}
+
+	@Override
+	public String toString() {
+		return "EventoORUR01{" +
+				"oru01_id=" + oru01_id +
+				", pid3_1_id_peticion='" + pid3_1_id_peticion + '\'' +
+				", pid3_1_id_seguridad_social='" + pid3_1_id_seguridad_social + '\'' +
+				", pid3_1_id_cip_nacional='" + pid3_1_id_cip_nacional + '\'' +
+				", pid3_1_id_dni='" + pid3_1_id_dni + '\'' +
+				", pid5_1_v_primer_apellido='" + pid5_1_v_primer_apellido + '\'' +
+				", pid5_2_v_nombre='" + pid5_2_v_nombre + '\'' +
+				", orc2_1_id_peticion='" + orc2_1_id_peticion + '\'' +
+				", obx_2_v_tipo_valor='" + obx_2_v_tipo_valor + '\'' +
+				", obx_3_1_v_id_observacion='" + obx_3_1_v_id_observacion + '\'' +
+				", obx_4_v_sub_id_observacion='" + obx_4_v_sub_id_observacion + '\'' +
+				", obx_5_v_valor_observacion='" + obx_5_v_valor_observacion + '\'' +
+				", oru01_dt_fecregistro=" + oru01_dt_fecregistro +
+				", oru01_id_medicion='" + oru01_id_medicion + '\'' +
+				", oru01_v_medico='" + oru01_v_medico + '\'' +
+				", oru01_dt_fecha_espirometria=" + oru01_dt_fecha_espirometria +
+				", oru01_v_pef='" + oru01_v_pef + '\'' +
+				", oru01_v_fev1='" + oru01_v_fev1 + '\'' +
+				", oru01_dt_fecha_fonendoscopia=" + oru01_dt_fecha_fonendoscopia +
+				", oru01_v_sonido='" + oru01_v_sonido + '\'' +
+				", oru01_dt_fecha_resultado=" + oru01_dt_fecha_resultado +
+				", oru01_b_estado='" + oru01_b_estado + '\'' +
+				", oru01_id_historico='" + oru01_id_historico + '\'' +
+				", oru01_v_ambientes_contaminados='" + oru01_v_ambientes_contaminados + '\'' +
+				", oru01_v_actividades='" + oru01_v_actividades + '\'' +
+				", oru01_v_cansancio='" + oru01_v_cansancio + '\'' +
+				", oru01_v_ausentismo='" + oru01_v_ausentismo + '\'' +
+				", oru01_v_asma='" + oru01_v_asma + '\'' +
+				", oru01_v_fuma='" + oru01_v_fuma + '\'' +
+				", oru01_v_alergico='" + oru01_v_alergico + '\'' +
+				", oru01_v_operaciones='" + oru01_v_operaciones + '\'' +
+				", oru01_v_tumores='" + oru01_v_tumores + '\'' +
+				", oru01_v_antecedentes='" + oru01_v_antecedentes + '\'' +
+				", oru01_v_medicion_actual='" + oru01_v_medicion_actual + '\'' +
+				", concentracion_oxigeno='" + concentracion_oxigeno + '\'' +
+				", cvf_capacidad_vital_forsada='" + cvf_capacidad_vital_forsada + '\'' +
+				", frecuencia_inspiracion='" + frecuencia_inspiracion + '\'' +
+				", frecuencia_expiracion='" + frecuencia_expiracion + '\'' +
+				", oru01_v_inc='" + oru01_v_inc + '\'' +
+				", oru01_v_tos='" + oru01_v_tos + '\'' +
+				", oru01_v_dolor='" + oru01_v_dolor + '\'' +
+				", oru01_v_sibilancia='" + oru01_v_sibilancia + '\'' +
+				", oru01_v_roncantes='" + oru01_v_roncantes + '\'' +
+				", oru01_v_feca='" + oru01_v_feca + '\'' +
+				", oru01_b_estado_p=" + oru01_b_estado_p +
+				", oru01_b_estado_f=" + oru01_b_estado_f +
+				", oru01_porcentaje_epoc=" + oru01_porcentaje_epoc +
+				'}';
+	}
 }
